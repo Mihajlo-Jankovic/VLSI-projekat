@@ -1,4 +1,4 @@
-# VLSI-projekat (Prepoznavanje objekata pomocu PYNQ Z2 ploce)
+# Detekcija objekata pomocu PYNQ Z2 ploce (VLSI-projekat)
 
 Ovaj repozitorijum sadrzi pip install paket za Quantized Neural Network (QNN) na PYNQ ploci. Koriscene su dve razlicite mrezne topologije, CNV i LFC kao sto je opisano u [FINN](https://arxiv.org/abs/1612.07119) clanku. Postoji vise dostupnih implementacija koje podrzavaju razlicite preciznosti za tezinu i aktivacione funkcije:
 
