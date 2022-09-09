@@ -1,9 +1,13 @@
 # Detekcija objekata pomocu PYNQ Z2 ploce (VLSI-projekat)
 
-Ovaj repozitorijum sadrzi pip install paket za Quantized Neural Network (QNN) na PYNQ ploci. Koriscene su dve razlicite mrezne topologije, CNV i LFC kao sto je opisano u [FINN](https://arxiv.org/abs/1612.07119) clanku. Postoji vise dostupnih implementacija koje podrzavaju razlicite preciznosti za tezinu i aktivacione funkcije:
+Ovaj repozitorijum sadrzi pip install paket za Quantized Neural Network (QNN) na PYNQ ploci koriscenjem Multi-Layer Offload (MO) arhitekture. Koriscena su dva razlicita "sloja", W1A2 (1 bit-na tezina, 2 bit-na aktivacija) i W1A3 (1 bit-na tezina, 3 bit-na aktivacija), izvrsavanjem programabilne logike jednog Convolutional sloja i jednog Max Pool sloja (opcionalno).
 
-- 1 bit-na tezina i 1 bit-na aktivacija (W1A1) za CNV i LFC
-- 1 bit-na tezina i 2 bit-na aktivacija (W1A2) za CNV i LFC
-- 2 bit-na tezina i 2 bit-na aktivacija (W2A2) za CNV
+## Brzo pokretanje
+Kako bi ste instalirali na PYNQ plocu, povezite plocu, otvorite terminal i upisite
+```shell
+# (on PYNQ v2.3 and later versions, tested up to v2.5)
+sudo pip3 install git+https://github.com/Mihajlo-Jankovic/VLSI-projekat.git
+```
 
-Podrzano je vise tipova ploca, a medju njima i ona koja je nama intersantna a to je Pynq-Z2.
+NAPOMENA: Ploca mora biti konektovana na internet
+
