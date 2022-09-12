@@ -11,3 +11,16 @@ sudo pip3 install git+https://github.com/Mihajlo-Jankovic/VLSI-projekat.git
 
 NAPOMENA: Ploca mora biti konektovana na internet
 
+## Organizacija projekta
+
+Projekat je organizovan na sledeci nacin:
+
+- folder qnn: Sadrzi opis qnn klase, kao i klasa za testiranje mreze
+  - src: Sadrzi izvor 2 overlay-a i biblioteke za rebuild-ovanje
+    - library: FINN biblioteka za HLS QNN-MO opise, host kod, skripta za rebuild-ovanje i trajveri za PYNQ
+    - Network: topologije W1A2 i W1A3 HLS top funkcije, host kod i skripta za build-ovanje HW-a i SW-a
+  - bitstreams: Bit-streamovi za 2 overlay-a
+  - libraries: pre-kompajlirani deljeni objekti za low-level drivere
+  - params: skup treniranih parametara
+- notebooks: lista skupova python-ovih biblioteka , koji ce tokom instalacije biti premesteni `/home/xilinx/jupyter_notebooks/qnn/` folder
+- tests: testna skripta i testne slike
